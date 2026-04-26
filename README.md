@@ -11,7 +11,7 @@ This project not only fixes those issues but evolves the system into an **AI-pow
 
 ## 📌 Original Project (Module 1)
 
-This project extends my original project: **"Game Glitch Investigator: The Impossible Guesser."**
+This project extends my original project: **"Game Glitch Investigator"**
 
 The original system was a Streamlit-based number guessing game designed to demonstrate debugging and testing concepts. It included gameplay features like difficulty levels, scoring, and attempts tracking, but intentionally contained bugs in state management, input validation, and logic. The goal was to identify and fix these issues using structured debugging and testing.
 
