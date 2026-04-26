@@ -79,7 +79,7 @@ User → Streamlit App → AI Debug Assistant → Reliability Checker → Output
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
----
+```
 
 ## 🧪 Sample Interactions
 
