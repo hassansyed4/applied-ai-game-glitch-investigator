@@ -95,7 +95,7 @@ streamlit run app.py
 
 - You can either select a predefined bug or type your own bug description, as shown in the examples below.
 
-Example 1: Bug Detection
+**Example 1: Bug Detection**
 Input:
 
 ```bash
@@ -108,7 +108,7 @@ Cause: Streamlit reruns script on each interaction
 Fix: Use st.session_state
 Reliability: High
 
-Example 2: Logic Issue
+**Example 2: Logic Issue**
 Input:
 
 ```bash
@@ -117,11 +117,11 @@ wrong hint is showing higher and lower incorrectly
 
 Output:
 
-Cause: Incorrect comparison logic
+Cause: Comparison logic in check_guess() is incorrect.
 Fix: Correct if-else conditions
 Reliability: High
 
-Example 3: No Bug Scenario
+**Example 3: No Bug Scenario**
 Input:
 
 ```bash
