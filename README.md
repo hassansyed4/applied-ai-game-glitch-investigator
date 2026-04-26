@@ -199,18 +199,3 @@ Improve UI and interactivity
 ## 🏁 Conclusion
 
 This project demonstrates how a simple application can evolve into a responsible AI system that not only solves problems but explains and validates them.
-
-```bash
----
-
-## What to do now
-
-1. Replace your README.md with this  
-2. Add your screenshot if needed  
-3. Push:
-
-```bash
-git add .
-git commit -m "Complete Step 3 & 4 documentation"
-git push
-```
