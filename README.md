@@ -180,6 +180,14 @@ assets/
 
 ## 📸 Demo
 
+![alt text](image.png)
+
+# 🚀 Stretch Features
+
+![alt text](image-1.png)
+
+# System Architecture
+
 ## 🚀 Future Improvements
 Integrate real LLM (OpenAI / Gemini)
 Auto-detect bugs from game behavior
