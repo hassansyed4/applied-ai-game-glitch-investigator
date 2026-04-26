@@ -1,5 +1,9 @@
 # 🎮🤖 AI Game Glitch Investigator Assistant
 
+## 🎥 Project Demo Walkthrough (Loom video link)
+
+[Watch Demo Video](PASTE_YOUR_LOOM_LINK_HERE)
+
 ## 🚨 The Situation
 
 You asked an AI to build a simple "Number Guessing Game" using Streamlit.  
