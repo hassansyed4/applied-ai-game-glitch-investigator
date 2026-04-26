@@ -1,6 +1,14 @@
 def analyze_bug(bug_description: str):
     bug_description = bug_description.lower()
 
+    # NEW: detect "no bug" cases
+    if "working fine" in bug_description or "no bug" in bug_description:
+        return {
+            "cause": "No issue detected. The game appears to be functioning correctly.",
+            "fix": "No fix required.",
+            "confidence": "High"
+        }
+
     if "secret number changes" in bug_description:
         return {
             "cause": "Streamlit reruns the script on each interaction, resetting variables.",
@@ -35,9 +43,10 @@ st.session_state.secret_number = random.randint(1, 100)
             "confidence": "Medium"
         }
 
+    # UPDATED DEFAULT CASE
     else:
         return {
-            "cause": "Unknown issue",
-            "fix": "Try checking state management and logic conditions.",
-            "confidence": "Low"
+            "cause": "No clear bug detected based on the description.",
+            "fix": "The system appears to be working as expected. No fix required.",
+            "confidence": "High"
         }

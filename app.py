@@ -167,8 +167,22 @@ st.divider()
 st.header("🤖 AI Game Glitch Investigator Assistant")
 st.caption("Describe a bug, and the AI assistant will explain the likely cause, suggest a fix, and run a reliability check.")
 
+bug_examples = [
+    "secret number changes after every submit",
+    "wrong hint is showing higher and lower incorrectly",
+    "attempts not resetting when I click new game",
+    "out-of-range input is treated as valid guess",
+    "non-number input causes error"
+]
+
+selected_bug = st.selectbox(
+    "Choose a known bug scenario:",
+    [""] + bug_examples
+)
+
 bug_input = st.text_area(
-    "Describe the bug you found:",
+    "Or describe the bug you found:",
+    value=selected_bug,
     placeholder="Example: secret number changes after every submit"
 )
 
