@@ -188,7 +188,7 @@ assets/
 
 # New Feature: AI Assistant Demo
 
-![alt_text](ai_assistant_demo.png)
+![alt_text](assets/ai_assistant_demo.png)
 
 ## 🚀 Future Improvements
 Integrate real LLM (OpenAI / Gemini)
