@@ -1,53 +1,81 @@
-# 🎮 Game Glitch Investigator: The Impossible Guesser
+# 🎮🤖 AI Game Glitch Investigator Assistant
 
 ## 🚨 The Situation
 
-You asked an AI to build a simple "Number Guessing Game" using Streamlit.
-It wrote the code, ran away, and now the game is unplayable. 
+You asked an AI to build a simple "Number Guessing Game" using Streamlit.  
+It wrote the code, ran away, and initially left behind a buggy system.
 
-- You can't win.
-- The hints lie to you.
-- The secret number seems to have commitment issues.
+This project not only fixes those issues but evolves the system into an **AI-powered debugging assistant**.
 
-## 🛠️ Setup
+---
 
-1. Install dependencies: `pip install -r requirements.txt`
-2. Run the broken app: `python -m streamlit run app.py`
+## 📌 Original Project (Module 1–3)
 
-## 🕵️‍♂️ Your Mission
+This project extends my original project: **"Game Glitch Investigator: The Impossible Guesser."**
 
-1. **Play the game.** Open the "Developer Debug Info" tab in the app to see the secret number. Try to win.
-2. **Find the State Bug.** Why does the secret number change every time you click "Submit"? Ask ChatGPT: *"How do I keep a variable from resetting in Streamlit when I click a button?"*
-3. **Fix the Logic.** The hints ("Higher/Lower") are wrong. Fix them.
-4. **Refactor & Test.** - Move the logic into `logic_utils.py`.
-   - Run `pytest` in your terminal.
-   - Keep fixing until all tests pass!
+The original system was a Streamlit-based number guessing game designed to demonstrate debugging and testing concepts. It included gameplay features like difficulty levels, scoring, and attempts tracking, but intentionally contained bugs in state management, input validation, and logic. The goal was to identify and fix these issues using structured debugging and testing.
 
-## 📝 Document Your Experience
+---
 
- - [x] Describe the game's purpose.
-    - A simple Streamlit number-guessing game: the app chooses a secret number and the player has a limited number of attempts to guess it. The UI shows higher/lower hints, an attempts counter, and a simple scoring system.
- - [x] Detail which bugs you found.
-    - Attempts counter behaved inconsistently (clicking New Game sometimes changed the attempts number unexpectedly).
-    - Out-of-range inputs (e.g., 101) were treated as valid guesses and produced higher/lower hints instead of an error message.
-    - The New Game button did not reliably reset the game state after the last attempt — the user had to reload the page to play again.
- - [x] Explain what fixes you applied.
-    - Refactored core logic into `logic_utils.py` (parse/validate guesses, check_guess, scoring, range helpers).
-    - Added robust input validation (`parse_guess`) so non-integers and out-of-range values return clear errors and do not consume attempts.
-    - Fixed guess comparison logic in `check_guess` to always return correct higher/lower hints.
-    - Updated `app.py` to reset `st.session_state` on New Game, moved the attempts/info banner so it reflects updated state immediately, and added a safe fallback when `st.experimental_rerun()` is unavailable.
-    - Added unit tests in `tests/test_game_logic.py` and verified all tests pass (`python -m pytest -q`).
+## 🎯 Project Summary
 
-## 📸 Demo
+This project transforms a buggy guessing game into an **Applied AI System** that:
 
-![alt text](image.png)
+- Detects and explains bugs
+- Suggests fixes
+- Evaluates reliability
+- Logs system behavior
 
-## 🚀 Stretch Features
+It demonstrates how AI can assist developers in debugging and validating systems.
 
-![alt text](image-1.png)
+---
 
-## System Architecture
+## 🎮 Features
 
-The AI Game Glitch Investigator uses a Streamlit interface where a user can play the game and describe a bug scenario. The AI Debug Assistant analyzes the description, explains the likely cause, suggests a fix, and sends the result to a reliability checker. The reliability checker assigns a confidence-based result, and the system logs every analysis for review.
+### Core Game
+- Number guessing game with difficulty levels
+- Attempts tracking and scoring
+- Input validation
+
+### AI Debug Assistant
+- Accepts bug descriptions
+- Explains root causes
+- Suggests fixes
+- Handles unknown inputs safely
+
+### Reliability System
+- Confidence scoring (High / Medium / Low)
+- Detects "no bug" scenarios
+- Prevents incorrect suggestions
+
+### Logging
+- Saves outputs in `debug_log.txt`
+- Tracks bug → cause → fix → result
+
+### Testing
+- Unit tests using `pytest`
+
+---
+
+## 🏗️ System Architecture
 
 ![System Architecture](assets/system_architecture.png)
+
+### Architecture Explanation
+
+The system follows a modular AI workflow:
+
+User → Streamlit App → AI Debug Assistant → Reliability Checker → Output → Logger
+
+- The user inputs a bug description
+- The AI analyzes and suggests a fix
+- The reliability system evaluates the confidence
+- The result is displayed and logged
+
+---
+
+## ⚙️ Setup Instructions
+
+```bash
+pip install -r requirements.txt
+streamlit run app.py
