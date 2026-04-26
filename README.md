@@ -88,6 +88,7 @@ Input:
 
 ```bash
 secret number changes after every submit
+```
 
 Output:
 
@@ -100,6 +101,7 @@ Input:
 
 ```bash
 wrong hint is showing higher and lower incorrectly
+```
 
 Output:
 
@@ -112,11 +114,13 @@ Input:
 
 ```bash
 my game is working fine
+```
 
 Output:
 
 ```bash
 No issue detected. The game appears to be functioning correctly.
+```
 
 ## 🧠 Design Decisions
 Used a rule-based AI system instead of a full LLM to keep the system lightweight and deterministic
@@ -139,6 +143,7 @@ Summary:
 ```bash
 5 out of 5 core scenarios passed successfully.
 System safely handled unknown inputs without generating incorrect fixes.
+```
 
 ##🔍 Reliability & Evaluation
 
@@ -163,6 +168,7 @@ The value of modular design and testing in building reliable software
 It also reinforced that AI systems must be transparent, reliable, and safe, especially when assisting in debugging or decision-making tasks.
 
 ## 📂 Project Structure
+```bash
 app.py
 logic_utils.py
 ai_debug_assistant.py
@@ -170,6 +176,7 @@ reliability_checker.py
 logger_utils.py
 tests/
 assets/
+```
 
 ## 📸 Demo
 
@@ -196,3 +203,4 @@ This project demonstrates how a simple application can evolve into a responsible
 git add .
 git commit -m "Complete Step 3 & 4 documentation"
 git push
+```
