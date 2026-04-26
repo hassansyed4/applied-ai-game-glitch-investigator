@@ -88,6 +88,8 @@ streamlit run app.py
 - You will see two options:
   1. **Choose a known bug scenario**
   2. **Or describe the bug you found**
+  ** Like this:
+     ![alt_text](assets/AI Game Glitch Investigator Assistant Section.png)
 
 - You can either select a predefined bug or type your own bug description, as shown in the examples below.
 
