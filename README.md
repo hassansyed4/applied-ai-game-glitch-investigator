@@ -182,11 +182,11 @@ assets/
 
 ![alt text](image.png)
 
-# 🚀 Stretch Features
+### 🚀 Stretch Features
 
 ![alt text](image-1.png)
 
-# New Feature: AI Assistant Demo
+### New Feature: AI Assistant Demo
 
 ![alt_text](assets/ai_assistant_demo.png)
 
