@@ -45,3 +45,9 @@ It wrote the code, ran away, and now the game is unplayable.
 ## 🚀 Stretch Features
 
 ![alt text](image-1.png)
+
+## System Architecture
+
+The AI Game Glitch Investigator uses a Streamlit interface where a user can play the game and describe a bug scenario. The AI Debug Assistant analyzes the description, explains the likely cause, suggests a fix, and sends the result to a reliability checker. The reliability checker assigns a confidence-based result, and the system logs every analysis for review.
+
+![System Architecture](assets/system_architecture.png)
