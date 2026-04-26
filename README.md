@@ -104,9 +104,11 @@ secret number changes after every submit
 
 Output:
 
+```bash
 Cause: Streamlit reruns script on each interaction
 Fix: Use st.session_state
 Reliability: High
+```
 
 **Example 2: Logic Issue**
 Input:
@@ -117,9 +119,11 @@ wrong hint is showing higher and lower incorrectly
 
 Output:
 
+```bash
 Cause: Comparison logic in check_guess() is incorrect.
 Fix: Correct if-else conditions
 Reliability: High
+```
 
 **Example 3: No Bug Scenario**
 Input:
