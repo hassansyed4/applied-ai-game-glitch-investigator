@@ -90,7 +90,8 @@ streamlit run app.py
   2. **Or describe the bug you found**
      
      **Like this:**
-     ![alt_text](assets/AI Game Glitch Investigator Assistant Section.png)
+     <img width="1025" height="706" alt="image" src="https://github.com/user-attachments/assets/a496191e-ed08-485b-849c-5a2d53c16640" />
+
 
 - You can either select a predefined bug or type your own bug description, as shown in the examples below.
 
