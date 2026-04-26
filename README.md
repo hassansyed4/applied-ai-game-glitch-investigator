@@ -200,14 +200,30 @@ This version:
 
 ## 💡 Reflection
 
-This project taught me:
+This project helped me understand that AI is not just about building something that works, but about building something that is **reliable, responsible, and explainable**.
 
-How to integrate AI into real-world applications
-The importance of guardrails in AI systems
-How to design systems that explain decisions, not just produce results
-The value of modular design and testing in building reliable software
+### Limitations and Biases
+The AI assistant is rule-based, which means it can only identify bugs that are explicitly defined in the system. It does not truly “understand” new or complex issues outside of its predefined patterns. This creates a limitation where unknown bugs may not be correctly identified, although guardrails are in place to handle such cases safely.
 
-It also reinforced that AI systems must be transparent, reliable, and safe, especially when assisting in debugging or decision-making tasks.
+### Potential Misuse and Prevention
+The system could be misused if users expect it to provide accurate debugging for completely unrelated or complex systems. To prevent this, the AI includes clear guardrails such as:
+- Returning “No issue detected” when input is unclear
+- Using confidence scoring to indicate uncertainty
+- Avoiding generating misleading or fabricated fixes
+
+### Reliability Insights
+One surprising observation during testing was how important **handling unknown inputs** is. Without proper guardrails, the AI could easily generate incorrect or misleading fixes. Adding fallback responses and confidence scoring significantly improved the system’s reliability and trustworthiness.
+
+### Collaboration with AI
+Throughout this project, I collaborated with AI as a development assistant.
+
+- **Helpful instance:**  
+  AI helped identify the root cause of the Streamlit state issue (secret number resetting) and suggested using `st.session_state`, which was critical in fixing the core bug.
+
+- **Flawed instance:**  
+  In one case, AI suggested a generic fix without fully considering the specific logic of my code, which could have introduced new issues. This highlighted the importance of reviewing AI suggestions critically rather than applying them blindly.
+
+Overall, this project reinforced that AI should be treated as a **supporting tool**, not a replacement for human reasoning. Effective AI systems must be designed with transparency, validation, and human oversight in mind.
 
 ## 📂 Project Structure
 ```bash
