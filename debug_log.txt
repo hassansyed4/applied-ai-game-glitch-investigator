@@ -290,3 +290,34 @@ if "secret_number" not in st.session_state:
 
 Result: Passed: Solution is reliable and follows best practices.
 --------------------------------------------------
+
+[2026-04-26 17:28:12.345173]
+Bug: secret number changes after every submit
+Cause: Streamlit reruns the script on each interaction, resetting variables.
+Fix: Use st.session_state to store the secret number:
+if "secret_number" not in st.session_state:
+    st.session_state.secret_number = random.randint(1, 100)
+
+Result: Passed: Solution is reliable and follows best practices.
+--------------------------------------------------
+
+[2026-04-26 17:28:34.248187]
+Bug: wrong hint is showing higher and lower incorrectly
+Cause: Comparison logic in check_guess() is incorrect.
+Fix: Fix logic:
+if guess < secret:
+    return "Higher"
+elif guess > secret:
+    return "Lower"
+else:
+    return "Correct"
+
+Result: Passed: Solution is reliable and follows best practices.
+--------------------------------------------------
+
+[2026-04-26 17:31:48.842893]
+Bug: my game is working fine
+Cause: No issue detected. The game appears to be functioning correctly.
+Fix: No fix required.
+Result: Passed: Solution is reliable and follows best practices.
+--------------------------------------------------
