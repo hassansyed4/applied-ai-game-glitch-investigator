@@ -186,7 +186,9 @@ assets/
 
 ![alt text](image-1.png)
 
-# System Architecture
+# New Feature: AI Assistant Demo
+
+![alt_text](ai_assistant_demo.png)
 
 ## 🚀 Future Improvements
 Integrate real LLM (OpenAI / Gemini)
