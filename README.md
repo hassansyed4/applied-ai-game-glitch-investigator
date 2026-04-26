@@ -83,6 +83,14 @@ streamlit run app.py
 
 ## 🧪 Sample Interactions
 
+### Go to the AI Game Glitch Investigator Assistant section
+
+- You will see two options:
+  1. **Choose a known bug scenario**
+  2. **Or describe the bug you found**
+
+- You can either select a predefined bug or type your own bug description, as shown in the examples below.
+
 Example 1: Bug Detection
 Input:
 
