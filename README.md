@@ -9,7 +9,7 @@ This project not only fixes those issues but evolves the system into an **AI-pow
 
 ---
 
-## 📌 Original Project (Module 1–3)
+## 📌 Original Project (Module 1)
 
 This project extends my original project: **"Game Glitch Investigator: The Impossible Guesser."**
 
