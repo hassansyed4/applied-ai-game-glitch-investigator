@@ -1,6 +1,11 @@
 # ...existing code...
 import random
 import streamlit as st
+
+from ai_debug_assistant import analyze_bug
+from reliability_checker import check_reliability
+from logger_utils import log_result
+
 from logic_utils import (
     get_range_for_difficulty,
     parse_guess,
@@ -156,3 +161,39 @@ if submit:
 st.divider()
 st.caption("Built by an AI that claims this code is production-ready.")
 # ...existing code...
+
+st.divider()
+
+st.header("🤖 AI Game Glitch Investigator Assistant")
+st.caption("Describe a bug, and the AI assistant will explain the likely cause, suggest a fix, and run a reliability check.")
+
+bug_input = st.text_area(
+    "Describe the bug you found:",
+    placeholder="Example: secret number changes after every submit"
+)
+
+if st.button("Analyze Bug with AI"):
+    if not bug_input.strip():
+        st.error("Please enter a bug description first.")
+    else:
+        ai_output = analyze_bug(bug_input)
+        reliability = check_reliability(ai_output)
+
+        st.subheader("AI Analysis")
+        st.write("Likely Cause:")
+        st.info(ai_output["cause"])
+
+        st.write("Suggested Fix:")
+        st.code(ai_output["fix"], language="python")
+
+        st.subheader("Reliability Check")
+        st.success(reliability)
+
+        log_result(
+            bug_input,
+            ai_output["cause"],
+            ai_output["fix"],
+            reliability
+        )
+
+        st.caption("This analysis was saved to debug_log.txt.")

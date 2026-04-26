@@ -1,0 +1,37 @@
+
+[2026-04-26 16:05:15.207201]
+Bug: secret number changes after every submit
+Cause: Streamlit reruns the script on each interaction, resetting variables.
+Fix: Use st.session_state to store the secret number:
+if "secret_number" not in st.session_state:
+    st.session_state.secret_number = random.randint(1, 100)
+
+Result: Passed: Solution is reliable and follows best practices.
+--------------------------------------------------
+
+[2026-04-26 16:09:54.255288]
+Bug: how to play this game?
+Cause: Unknown issue
+Fix: Try checking state management and logic conditions.
+Result: Failed: Low confidence. Needs manual verification.
+--------------------------------------------------
+
+[2026-04-26 16:10:18.023667]
+Bug: secret number changes after every submit on click
+Cause: Streamlit reruns the script on each interaction, resetting variables.
+Fix: Use st.session_state to store the secret number:
+if "secret_number" not in st.session_state:
+    st.session_state.secret_number = random.randint(1, 100)
+
+Result: Passed: Solution is reliable and follows best practices.
+--------------------------------------------------
+
+[2026-04-26 16:11:08.518931]
+Bug: secret number changes after every submit
+Cause: Streamlit reruns the script on each interaction, resetting variables.
+Fix: Use st.session_state to store the secret number:
+if "secret_number" not in st.session_state:
+    st.session_state.secret_number = random.randint(1, 100)
+
+Result: Passed: Solution is reliable and follows best practices.
+--------------------------------------------------
