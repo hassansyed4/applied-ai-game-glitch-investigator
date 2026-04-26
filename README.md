@@ -2,7 +2,7 @@
 
 ## 🎥 Project Demo Walkthrough (Loom video link)
 
-[Watch Demo Video](PASTE_YOUR_LOOM_LINK_HERE)
+[Watch Demo Video](https://www.loom.com/share/e5243bbcc26e436992f21bc52dbda228)
 
 ## 🚨 The Situation
 
